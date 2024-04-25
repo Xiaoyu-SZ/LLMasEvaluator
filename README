@@ -1,0 +1,56 @@
+df_explanation.pkl: (The processed data)
+
+#   Column                      Non-Null Count  Dtype      Description
+---  ------                      --------------  -----      -------------------------
+ 0   user_id                     2536 non-null   object     identity of the user participants
+ 1   movie_id                    2536 non-null   int64      identity of the recommended item
+ 2   explanation_type            2536 non-null   object     type of the explanation
+ 3   explanation                 2536 non-null   object     text of the explanation (in Chinese)
+ 4   before_click_intent         2536 non-null   int64      value of the click intention (before-explanation phase)
+ 5   before_watch_intent         2536 non-null   int64      value of the watch intention (before-explanation phase)
+ 6   before_expected_preference  2536 non-null   int64      value of the expected preference (before-explanation phase)
+ 7   after_click_intent          2536 non-null   int64      value of the click intention (after-explanation phase)
+ 8   after_watch_intent          2536 non-null   int64      value of the watch intention (after-explanation phase)
+ 9   after_expected_preference   2536 non-null   int64      value of the expected preference (after-explanation phase)
+ 10  exam_watch_intent           2536 non-null   int64      value of the watch intention (post-examine phase)
+ 11  exam_expected_preference    2536 non-null   int64      value of the expected preference (post-examine phase)
+ 12  persuasiveness              2533 non-null   float64    value of user preceived persuasiveness
+ 13  transparency                2530 non-null   float64    value of user preceived transparency
+ 14  pre_knowledge               2536 non-null   int64      value of user preceived pre_knowledge
+ 15  interest_accuracy           2536 non-null   int64      value of user preceived interest_accuracy
+ 16  satisfaction                2536 non-null   int64      value of user preceived satisfaction
+ 17  evaluate_reason             1973 non-null   object     user feedback: satisfaction reasons
+ 18  rouge-1                     2536 non-null   float64    similarity between explanation and self explanation
+ 19  rouge-2                     2536 non-null   float64    similarity between explanation and self explanation
+ 20  rouge-L                     2536 non-null   float64    similarity between explanation and self explanation
+ 21  self_explanation            2536 non-null   object     user feedback: self-explanation
+ 22  self_attributes             2536 non-null   object     user feedback: self-explanation (attribute-level)
+ 23  self_pos                    2536 non-null   object     user feedback: self-explanation (attribute-level pos)
+ 24  self_normal                 2536 non-null   object     user feedback: self-explanation (attribute-level moderate)
+ 25  self_neg                    2536 non-null   object     user feedback: self-explanation (attribute-level negative)
+ 26  peer_summary_ans            2536 non-null   object     peer feedback: (overall summary for the estimated user interest)
+ 27  rank_result                 2536 non-null   object     user feedback: rank of the shown explanations
+ 28  rank_result_type            2536 non-null   object     user feedback: rank of the shown explanation types
+ 29  match_self                  1947 non-null   object     signal for matching self-explanation-attributes
+ 30  match_self_pos              1947 non-null   object     signal for matching self-explanation-pos-attributes
+ 31  match_self_neg              1947 non-null   object     signal for matching self-explanation-neg-attributes
+ 32  match_self_normal           1947 non-null   object     signal for matching self-explanation-moderate-attributes
+ 33  change_click_intent         2536 non-null   int64      change of user click intention (pre-expl -> post-expl)
+ 34  change_watch_intent         2536 non-null   int64      change of user watch intention (pre-expl -> post-expl)
+ 35  change_expected_preference  2536 non-null   int64      change of user expected preference (pre-expl -> post-expl)
+ 36  peer_id                     2536 non-null   object     identity of the peer
+ 37  movie_title                 2536 non-null   object     title of the recommended movie
+ 38  peer_similar_movie          2536 non-null   object     peer feedback: most similar movie in the history
+ 39  peer_attributes             2536 non-null   object     peer feedback: attribute-level annotations
+ 40  peer_pos                    2536 non-null   object     peer feedback: peer-explanation (attribute-level pos)
+ 41  peer_normal                 2536 non-null   object     peer feedback: peer-explanation (attribute-level moderate)
+ 42  peer_neg                    2536 non-null   object     peer feedback: peer-explanation (attribute-level negative)
+ 43  peer_preference             2536 non-null   object     peer feedback: peer estimated user preference
+ 44  peer_explanation_short      2536 non-null   object     peer feedback: peer-explanation (in Chinese)
+ 45  peer_confidence             2536 non-null   object     peer feedback: confidence for the explanation
+ 46  peer_explanation_long       2536 non-null   object     peer feedback: peer-explanation (in Chinese) (more detailed)
+ 47  peer_best_attribute         2536 non-null   object     peer feedback: most attractive attribute
+ 48  match_peer                  1947 non-null   object     signal for matching self-explanation
+ 49  match_peer_pos              1947 non-null   object     signal for matching self-explanation-pos
+ 50  match_peer_neg              1947 non-null   object     signal for matching self-explanation-neg
+ 51  match_peer_normal           1947 non-null   object     signal for matching self-explanation-moderate
