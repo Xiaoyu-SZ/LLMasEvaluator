@@ -70,30 +70,3 @@ The `llm_value` is the value predicted by LLM, and the others are from the data.
 The data of real user labels and self-explanations is from the paper "User Perception of Recommendation Explanation: Are Your Explanations What Users Need?", see `./output/df_explanation.pkl`.
 
 We additionally collect third-part annotations for the explanatory texts, see `./output/third_party.csv`.
-
-If you use the data in `./output/df_explanation.pkl`, please cite the paper:
-
-```bibtex
-@article{UserPerceptionTois2023,
-  author       = {Hongyu Lu and
-                  Weizhi Ma and
-                  Yifan Wang and
-                  Min Zhang and
-                  Xiang Wang and
-                  Yiqun Liu and
-                  Tat{-}Seng Chua and
-                  Shaoping Ma},
-  title        = {User Perception of Recommendation Explanation: Are Your Explanations
-                  What Users Need?},
-  journal      = {{ACM} Trans. Inf. Syst.},
-  volume       = {41},
-  number       = {2},
-  pages        = {48:1--48:31},
-  year         = {2023},
-  url          = {https://doi.org/10.1145/3565480},
-  doi          = {10.1145/3565480},
-  timestamp    = {Sat, 27 May 2023 15:23:45 +0200},
-  biburl       = {https://dblp.org/rec/journals/tois/LuMWZWLCM23.bib},
-  bibsource    = {dblp computer science bibliography, https://dblp.org}
-}
-```
