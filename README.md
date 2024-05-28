@@ -69,7 +69,7 @@ The `llm_value` is the value predicted by LLM, and the others are from the data.
 ## Dataset Information
 The data of real user labels and self-explanations is from the paper "User Perception of Recommendation Explanation: Are Your Explanations What Users Need?", see `./output/df_explanation.pkl`.
 
-We additionally collect third-part annotations for the explanatory texts, see `./output/third_party_annotation.csv`.
+We additionally collect third-part annotations for the explanatory texts, see `./output/third_party.csv`.
 
 If you use the data in `./output/df_explanation.pkl`, please cite the paper:
 
