@@ -38,7 +38,7 @@ For example:
 ```python
 MODEL_NAME = 'gpt-3.5-turbo'
 CONTAIN_USER_PROFILE = False
-CONTAIN_SHOT = 'None' # All or Type or None
+CONTAIN_SHOT = 'None' # Type or None
 PERSONALIZED = '_personalized' if CONTAIN_USER_PROFILE else ''
 TEMPEARTURE = 0
 ```
@@ -55,7 +55,7 @@ Then run `annot_vllm.py` or `annot_vllm_single.py`
 
 ### Calculate the metrics
 
-Run `corr.py`, it will calculate the correlations between the annotations and the ground truth for all files in `./data/`
+Run `corr.py`, it will calculate the correlations between the annotations and the ground truth for files in `./output/`
 
 The output contains Pearson correlation, Spearman correlation and Kendall correlation; all of them are in Dataset-Level, User-Level and Item-Level.
 
@@ -67,10 +67,11 @@ The output is in DataFrame format. The columns are:
 The `llm_value` is the value predicted by LLM, and the others are from the data.
 
 ## Dataset Information
+The data of real user labels and self-explanations is from the paper "User Perception of Recommendation Explanation: Are Your Explanations What Users Need?", see `./output/df_explanation.pkl`.
 
-The dataset is from the paper "User Perception of Recommendation Explanation: Are Your Explanations What Users Need?".
+We additionally collect third-part annotations for the explanatory texts, see `./output/third_party_annotation.csv`.
 
-If you use this dataset, please cite the paper:
+If you use the data in `./output/df_explanation.pkl`, please cite the paper:
 
 ```bibtex
 @article{UserPerceptionTois2023,
