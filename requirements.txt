@@ -1,0 +1,7 @@
+pandas
+tqdm
+scipy
+numpy
+openai
+bs4
+scipy
