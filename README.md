@@ -95,6 +95,7 @@ We additionally collect third-part annotations for the explanatory texts, see `.
 
 If you find our [paper](https://arxiv.org/abs/2406.03248) or the data collected useful for your research, please cite our work.
 
+```
 @inproceedings{10.1145/3640457.3688075,
 author = {Zhang, Xiaoyu and Li, Yishan and Wang, Jiayin and Sun, Bowen and Ma, Weizhi and Sun, Peijie and Zhang, Min},
 title = {Large Language Models as Evaluators for Recommendation Explanations},
@@ -111,4 +112,5 @@ keywords = {Evaluation, Explainable Recommendation, Large Language Model},
 location = {Bari, Italy},
 series = {RecSys '24}
 }
+```
 
