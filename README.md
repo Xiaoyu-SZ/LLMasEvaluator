@@ -69,4 +69,46 @@ The `llm_value` is the value predicted by LLM, and the others are from the data.
 ## Dataset Information
 The data of real user labels and self-explanations is from the paper "User Perception of Recommendation Explanation: Are Your Explanations What Users Need?", see `./output/df_explanation.pkl`.
 
+```
+@article{10.1145/3565480,
+author = {Lu, Hongyu and Ma, Weizhi and Wang, Yifan and Zhang, Min and Wang, Xiang and Liu, Yiqun and Chua, Tat-Seng and Ma, Shaoping},
+title = {User Perception of Recommendation Explanation: Are Your Explanations What Users Need?},
+year = {2023},
+issue_date = {April 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {41},
+number = {2},
+issn = {1046-8188},
+url = {https://doi.org/10.1145/3565480},
+doi = {10.1145/3565480},
+month = jan,
+articleno = {48},
+numpages = {31},
+keywords = {user modeling, recommendation explanation, Recommender system}
+}
+```
+
 We additionally collect third-part annotations for the explanatory texts, see `./output/third_party.csv`.
+
+## Citation
+
+If you find our [paper](https://arxiv.org/abs/2406.03248) or the data collected useful for your research, please cite our work.
+
+@inproceedings{10.1145/3640457.3688075,
+author = {Zhang, Xiaoyu and Li, Yishan and Wang, Jiayin and Sun, Bowen and Ma, Weizhi and Sun, Peijie and Zhang, Min},
+title = {Large Language Models as Evaluators for Recommendation Explanations},
+year = {2024},
+isbn = {9798400705052},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3640457.3688075},
+doi = {10.1145/3640457.3688075},
+booktitle = {Proceedings of the 18th ACM Conference on Recommender Systems},
+pages = {33–42},
+numpages = {10},
+keywords = {Evaluation, Explainable Recommendation, Large Language Model},
+location = {Bari, Italy},
+series = {RecSys '24}
+}
+
